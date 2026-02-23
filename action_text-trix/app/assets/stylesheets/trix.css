@@ -492,15 +492,6 @@ main {
   max-width: 800px;
 }
 
-trix-toolbar .trix-button-group {
-  border: none;
-}
-
-trix-toolbar .trix-button:hover {
-  background-color: #f1f2f2;
-  border-radius: 8px;
-}
-
 trix-editor {
   border: none !important;
   padding: 1.5rem !important;
@@ -523,7 +514,6 @@ trix-editor:invalid {
 #output {
   margin: 1rem 0 0;
 }
-
 #output textarea {
   width: 100%;
   height: 6rem;
@@ -548,20 +538,6 @@ trix-editor:invalid {
   justify-content: center;
 }
 
-trix-toolbar#my-toolbar {
-  width: 100%;
-  max-width: 1200px;
-  padding: 8px 20px;
-  border: none !important;
-  margin: 0 auto;
-}
-
-trix-toolbar .trix-button-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .content-container {
   margin-top: 40px;
   padding: 0 20px;
@@ -570,4 +546,30 @@ trix-toolbar .trix-button-row {
 .icon {
   height: 20px;
   width: 20px;
+}
+
+trix-toolbar #my-toolbar {
+  width: 100%;
+  max-width: 1200px;
+  padding: 8px 20px;
+  border: none !important;
+  margin: 0 auto;
+}
+trix-toolbar .trix-button-group {
+  border: none;
+}
+trix-toolbar .trix-button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+trix-toolbar .trix-button {
+  border: none;
+}
+trix-toolbar .trix-button:hover {
+  background-color: #f1f2f2;
+  border-radius: 8px;
+}
+trix-toolbar .trix-button:not(:first-child) {
+  border-left: none !important;
 }
